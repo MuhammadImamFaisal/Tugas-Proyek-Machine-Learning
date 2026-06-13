@@ -134,6 +134,6 @@ streamlit run app.py
 
 ---
 
-## Tim
+### Tim
 - Muchamad Alfaidzin - 2330511012
 - Muhammad Imam Faisal - 2330511016
