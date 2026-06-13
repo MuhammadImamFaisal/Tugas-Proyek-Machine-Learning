@@ -2,15 +2,13 @@ import streamlit as st
 import pandas as pd
 import joblib
 
-# Load model & preprocessing tools
-model = joblib.load('model_churn.pkl')       # Logistic Regression (model terbaik)
+model = joblib.load('model_churn.pkl')       
 scaler = joblib.load('scaler.pkl')
 le_dict = joblib.load('label_encoders.pkl')
 
 st.title("Prediksi Customer Churn")
 st.write("Masukkan data pelanggan untuk memprediksi kemungkinan churn.")
 
-# ===== Input semua fitur sesuai urutan kolom X_train =====
 gender = st.selectbox("Gender", le_dict['gender'].classes_)
 senior = st.selectbox("Senior Citizen", [0, 1])
 partner = st.selectbox("Partner", le_dict['Partner'].classes_)
@@ -32,7 +30,6 @@ monthly_charges = st.number_input("Monthly Charges", min_value=0.0, value=50.0)
 total_charges = st.number_input("Total Charges", min_value=0.0, value=600.0)
 
 if st.button("Prediksi"):
-    # Susun input sesuai urutan kolom X_train (HARUS SAMA URUTANNYA)
     input_dict = {
         'gender': le_dict['gender'].transform([gender])[0],
         'SeniorCitizen': senior,
@@ -57,7 +54,6 @@ if st.button("Prediksi"):
 
     input_df = pd.DataFrame([input_dict])
 
-    # Model terbaik = Logistic Regression -> WAJIB di-scale
     input_scaled = scaler.transform(input_df)
     pred = model.predict(input_scaled)
     proba = model.predict_proba(input_scaled)[0][1]
