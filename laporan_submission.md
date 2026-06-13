@@ -1,4 +1,4 @@
-# Laporan Proyek Machine Learning - Prediksi Customer Churn
+# Prediksi Customer Churn - Muhammad Imam Faisal & Muchamad Alfaidzin
 
 ## Domain Proyek
 
