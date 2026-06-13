@@ -135,5 +135,5 @@ streamlit run app.py
 ---
 
 ## Tim
-- [ISI: Nama Anggota 1] - [ISI: NIM]
-- [ISI: Nama Anggota 2] - [ISI: NIM]
+- Muchamad Alfaidzin - 2330511012
+- Muhammad Imam Faisal - 2330511016
