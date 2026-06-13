@@ -158,7 +158,7 @@ Model terbaik (Logistic Regression) di-deploy menggunakan **Streamlit** sebagai 
 ### Tampilan Aplikasi
 Berikut adalah tampilan aplikasi Streamlit yang telah berjalan, berisi form input data pelanggan untuk memprediksi status churn:
 
-![Tampilan Aplikasi Streamlit](./streamlit_app.png)
+![Tampilan Aplikasi Streamlit](./streamlitapp.png)
 
 ## Kesimpulan
 Proyek ini menunjukkan bahwa model Logistic Regression dapat digunakan untuk memprediksi customer churn pada industri telekomunikasi dengan F1-Score sebesar 0.5916, mengungguli Random Forest dan XGBoost pada eksperimen ini. Fitur jenis kontrak dan lama berlangganan teridentifikasi sebagai faktor penting yang memengaruhi churn, sehingga dapat digunakan oleh perusahaan sebagai dasar dalam merancang strategi retensi pelanggan yang lebih tepat sasaran.
